@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/appletouchicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/safaripinnedtab.svg?v=5.1.4" color="#222">
+
+
+
+  <meta name="msapplication-config" content="/iebrowserconfig.xml">
+
+
+
+  <meta name="keywords" content="Books,Study,">
+
+
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="JWBlog" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="PrologueThis is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speak">
+<meta name="keywords" content="Books,Study">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Summaries of a book —— Make Your Own Neural Network">
+<meta property="og:url" content="https://jakewang.me/Summaries of a book —— Make Your Own Neural Network/index.html">
+<meta property="og:site_name" content="JWBlog">
+<meta property="og:description" content="PrologueThis is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speak">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_0.jpg">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_1.jpg">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_2.jpg">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_3.jpg">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_4.jpg">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_5.jpg">
+<meta property="og:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_6.jpg">
+<meta property="og:updated_time" content="2020-02-19T03:08:12.980Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Summaries of a book —— Make Your Own Neural Network">
+<meta name="twitter:description" content="PrologueThis is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speak">
+<meta name="twitter:image" content="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_0.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://jakewang.me/Summaries of a book —— Make Your Own Neural Network/">
+
+
+
+
+
+  <title>Summaries of a book —— Make Your Own Neural Network | JWBlog</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-128605298-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    var host = "jakewang.me";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JWBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Think More, Do More</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jakewang.me/Summaries of a book —— Make Your Own Neural Network/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jake Wang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JWBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Summaries of a book —— Make Your Own Neural Network</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-18T22:46:19+08:00">
+                01-18-2019
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> Views
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.8k words
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  11 mins
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h2><p>This is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speaker, I can write slower and have more time to acquire and understand the knowledge in the book totally. Second, codes and functions are written by English in this book. Thus, thinking in the same language will help me avoid issues of translation, especially the special words in codes. Last but not least, the process can be credit to improve my English skills which is very superficial.</p>
+<p><em>Make Your Own Neural Network</em> is a basic introduced book for people who hope to know mechanisms of neural network and machine learning. Even if people don’t want to learn programming, the simple explanation can teach them how a computer simulates neural cells to work like the human’s brain. There are the book’s links at <a href="https://book.douban.com/subject/26945232/" target="_blank" rel="noopener">Douban</a>, <a href="https://www.amazon.com/Make-Your-Own-Neural-Network/dp/1530826608/ref=sr_1_2?ie=UTF8&qid=1547821621&sr=8-2&keywords=make+your+own+neural+network" target="_blank" rel="noopener">Amazon</a> and my <a href="https://github.com/jakewg/jw_blog_file_host/raw/master/Make%20Your%20Own%20Neural%20Network/Make%20Your%20Own%20Neural%20Network_withMarginNotes.pdf" target="_blank" rel="noopener"> mindnote</a>, <a href="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/Make%20Your%20Own%20Neural%20Network/neural%20network%20backup.py" target="_blank" rel="noopener">final code backup</a> at Github.</p>
+<h2 id="Mechanism"><a href="#Mechanism" class="headerlink" title="Mechanism"></a>Mechanism</h2><h3 id="A-new-age-inspired-by-a-nature"><a href="#A-new-age-inspired-by-a-nature" class="headerlink" title="A new age inspired by a nature"></a>A new age inspired by a nature</h3><p>After the computer having popularized, many boring and tough tasks are no longer difficult for people, such as calculating millions of numbers. Although computers can deal with complex multi-problems simultaneously, they have no ability to identify is there a cat or a baby in a photo. Therefore, people say why not try to build artificial brains by copying how real biological brains worked? The next step is that using programs to make machines cope with tasks just like what human neural cells do.</p>
+<h3 id="A-simple-predicting-machine"><a href="#A-simple-predicting-machine" class="headerlink" title="A simple predicting machine"></a>A simple predicting machine</h3><p>Like all computer systems, we should have an input and an output with some calculation in between. Compared with math solutions, we may do not know how the process happen. So we could only use a model with parameters which we can adjust to represent this mysterious process. After that, a good method to refine these models is to adjust the parameters based on how wrong the model is compared to know true examples.</p>
+<h3 id="Training-a-simple-classifier"><a href="#Training-a-simple-classifier" class="headerlink" title="Training a simple classifier"></a>Training a simple classifier</h3><p>Training data means that examples of truth used to teach a predictor or a classifier.</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_0.jpg" alt></p>
+<p>Through these graphs, we can know how to use the error to inform how we adjust the slope. We can use the equation <em>∆A = E / x</em> to update the original A many times and simply match the last training example closely. Besides, we need use <strong>learning rate</strong> to moderate the updates which is helpful to avoid errors and noises from the real world. </p>
+<p>But one classifier is not enough.  It cannot separate data where that data itself isn’t governed by a single linear process. Boolean functions, <strong>AND, OR, XOR</strong> are also very necessary when we just use multiple linear classifiers to divide up data.</p>
+<h3 id="Neurons-nature’s-computing-machines"><a href="#Neurons-nature’s-computing-machines" class="headerlink" title="Neurons, nature’s computing machines"></a>Neurons, nature’s computing machines</h3><p>Neurons all transmit an electrical signal from one end to the other, from dendrites along the axons to the terminals. It takes an electric input, and pops out another electrical signal. They do not react readily but instead suppress the input until it has grown so large that it triggers and output. We can use the logistic function to simulate the process’s characteristic.</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_1.jpg" alt></p>
+<p>One way to replicate this from nature to an artificial model is to have layers of neurons, with each connected to every other one in the preceding and subsequent layer. By this method, our computer model will also attain the ability to be incredibly resilient to damage and imperfect signals just like human brains. To make the model learn, we should adjust the strength of connections between nodes. Therefore, the mechanism ought to de-emphasize a weight which lead to the wrong answer and raise the weight which lead to the right answer.</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_2.jpg" alt></p>
+<h3 id="Matrix-multiplication-is-useful"><a href="#Matrix-multiplication-is-useful" class="headerlink" title="Matrix multiplication is useful"></a>Matrix multiplication is useful</h3><p>First, matrix allow us to compress writing all those calculations into a very simple short form. Second, many computer programming languages understand working with matrices quickly and efficiently.</p>
+<p><em>X = W·I</em> and <em>O = sigmoid (X)</em> W is the matrix of weight, I is the matrix of inputs.</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_3.jpg" alt></p>
+<h3 id="Learning-weights-from-more-than-one-node"><a href="#Learning-weights-from-more-than-one-node" class="headerlink" title="Learning weights from more than one node"></a>Learning weights from more than one node</h3><p>The next step is to use the output from the neural network and compare it with the training example to work out an error. We used the error, the difference between what the node produced as an answer and what we know the answer should, to guide that refinement. So we use the proportion of weights to split the output error. In below graphs, the error e1 is split in proportion to the connected links, which have weight w11 and w21.</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_4.jpg" alt></p>
+<p>If we had even more layers, we’d repeatedly apply this same idea to each layer working backwards from the final output layer.</p>
+<h3 id="How-do-we-actually-update-weights"><a href="#How-do-we-actually-update-weights" class="headerlink" title="How do we actually update weights"></a>How do we actually update weights</h3><p>The mathematical expressions showing how all the weights result in a neural network’s output are too complex to easily untangle. Thus, we can use gradient descent method to find the minimum without actually having to understand functions. It is very necessary for us to refine without the size of the steps overshooting the minimum and forever bouncing around it.</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_5.jpg" alt></p>
+<p>To avoid ending up in the wrong valley, or function minimum, we train neural networks several times starting from different points on the hill to ensure we don’t always ending up in the wrong valley. So this method is also resilient to imperfections in the data, we don’t go wildly wrong if the function isn’t quite perfectly. </p>
+<p>Here’s the final answer we’ve been working towards, the one that describes the slope of the error function so we can adjust the weight wjk. And we also use 𝛂 as a learning rate</p>
+<p><img src="https://github.com/jakewg/jw_blog_file_host/raw/master/pages_img/make_you_own_neural_network_6.jpg" alt></p>
+<h3 id="Preparing-date"><a href="#Preparing-date" class="headerlink" title="Preparing date"></a>Preparing date</h3><h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><p>A very flat activation function is problematic because we use the gradient to learn new weights. A tiny gradient means we’ve limited the ability to learn which called <strong>saturating a neural network</strong>. Besides, a very very tiny values can be problematic too because computers can lose accuracy when dealing very very small or very very large numbers. The good range of input is range 0.0 to 1.0. To avoid killing the learning ability by zeroing the weight update, zero inputs should not be included in.</p>
+<h4 id="output"><a href="#output" class="headerlink" title="output"></a>output</h4><p>The logistic function doesn’t get to 1.0, and it just gets closer to it which is called this asymptotically approaching 1.0. If we do set target values in the inaccessible ranges, the training will drive ever large weights in an attempt to produce larger and larger output.</p>
+<h3 id="random-initial-weights"><a href="#random-initial-weights" class="headerlink" title="random initial weights"></a>random initial weights</h3><p>We should choose initial weights randomly and uniformly from range -1.0 to +1.0. and avoid large initial weights because they cause large signals into an activation function and undermine the effort we put into carefully scaling the input signals. Moreover, we don’t set the initial weights the same constant value, especially. Obviously, zero weights can kill the input signal and error back propagating should not be divided equally.</p>
+<h2 id="DIY-with-Python"><a href="#DIY-with-Python" class="headerlink" title="DIY with Python"></a>DIY with Python</h2><h3 id="A-very-gentle-start-with-Python"><a href="#A-very-gentle-start-with-Python" class="headerlink" title="A very gentle start with Python"></a>A very gentle start with Python</h3><p>Class: we have created an object called sizzles from the Dog class definition and we can consider this object to be a dog.  </p>
+<pre><code>sizzles =  Dog() sizzles.bark()
+#initialisation method with internal data
+def __init__(self, petname, temp):
+self.name = petname;
+self.temperaturn = temp:
+pass</code></pre><p>The <code>self.</code> part means that the variables are part of this object and are independent of another Dog object or general variables in Python.</p>
+<h3 id="Neural-network-with-Python"><a href="#Neural-network-with-Python" class="headerlink" title="Neural network with Python"></a>Neural network with Python</h3><p>The skeleton code:</p>
+<ul>
+<li>initialization: to set the number of input, hidden and output nodes.</li>
+<li>train: refine the weights after being given a training set example to learn from.</li>
+<li>query: give an answer from the output nodes after being given an input.</li>
+</ul>
+<p>The most important part of the network is the link weights expressed as a matrix. <em>Xhidden = Winput_hiddenx · I</em> <em>Ohidden = sigmoid · ( Xhidden )</em></p>
+<p>Training the network:</p>
+<ul>
+<li>working out the output for a given training example. That is no different to what we just did with the query() function.</li>
+<li>taking this calculated output, comparing it with the desired output, and using the difference to guide the updating of the network weights.</li>
+</ul>
+<h3 id="The-NMIST-dataset-of-hand-written-numbers"><a href="#The-NMIST-dataset-of-hand-written-numbers" class="headerlink" title="The NMIST dataset of hand written numbers"></a>The NMIST dataset of hand written numbers</h3><p>There is my <a href="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/Make%20Your%20Own%20Neural%20Network/neural%20network%20backup.py" target="_blank" rel="noopener">final codes backup</a> on GIthub.</p>
+<p>In the <em>.cvs</em> file, the first value is the label which is the actual digit that the handwriting is supposed to represent. The subsequent values means the original picture’s pixel values. We did see earlier how we might plot a rectangular array of numbers using the <code>imshow()</code> function. We want to do the same here but we need to convert that list of comma separated numbers into a suitable array. Split that long text string of comma separated values into individual values, using the commas as the place to do the splitting. Ignore the first value, which is the label, and take the remaining list of 28 x 28 = 784 values and turn them into an array which has a shape of 28 rows by 28 columns and plot the array.</p>
+<p>We’ve deliberately chosen 0.01 as the lower end of the range to avoid the problems we saw earlier with zero valued inputs because they can artificially kill weight updates. We don’t have to choose 0.99 for the upper end of the input because we don’t need to avoid 1.0 for the inputs. It’s only for the outputs that we should avoid the impossible to reach 1.0.</p>
+<p>By choosing a value smaller than the number of inputs, we force the network to try to summaries the key features. But if we choose too few hidden layer nodes, then we restrict the ability of the network to find sufficient features or patterns.</p>
+<p>Finally, we can do some improvements.</p>
+<ul>
+<li>The first improvement we can try is to adjust the learning rate. We set it at 0.3 previously without really experimenting with different values.</li>
+<li>The next improvement we can do is to repeat the training several times against the data set. Some people call each run through an epoch.</li>
+<li>Another idea is that the learning rate is too high for larger numbers of epochs.</li>
+<li>Try changing the number of middle hidden layer nodes.</li>
+</ul>
+<h2 id="Even-More-Fun"><a href="#Even-More-Fun" class="headerlink" title="Even More Fun"></a>Even More Fun</h2><h3 id="Inside-the-mind-of-a-neural-network"><a href="#Inside-the-mind-of-a-neural-network" class="headerlink" title="Inside the mind of a neural network"></a>Inside the mind of a neural network</h3><p>Once a neural network is trained, and performs well enough on test data, we essentially have a mysterious black box. We don’t really know how it works out the answer - it just does.</p>
+<h3 id="Creating-new-training-data-rotations"><a href="#Creating-new-training-data-rotations" class="headerlink" title="Creating new training data: rotations"></a>Creating new training data: rotations</h3><p>we could create new ones from those by rotating them clockwise and anti-clockwise, by 10 degrees for example. o by adding training examples with overly rotated images, we are reducing the quality of the training by adding false examples. Ten degrees seems to be the optimal angle for maximizing the value of additional data.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Books/" rel="tag"># Books</a>
+          
+            <a href="/tags/Study/" rel="tag"># Study</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/双拼使用体验：打字效率翻倍？/" rel="prev" title="双拼使用体验：打字效率翻倍？">
+                双拼使用体验：打字效率翻倍？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Jake Wang</p>
+              <p class="site-description motion-element" itemprop="description">personal blog</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Prologue"><span class="nav-number">1.</span> <span class="nav-text">Prologue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mechanism"><span class="nav-number">2.</span> <span class="nav-text">Mechanism</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-new-age-inspired-by-a-nature"><span class="nav-number">2.1.</span> <span class="nav-text">A new age inspired by a nature</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-simple-predicting-machine"><span class="nav-number">2.2.</span> <span class="nav-text">A simple predicting machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-a-simple-classifier"><span class="nav-number">2.3.</span> <span class="nav-text">Training a simple classifier</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Neurons-nature’s-computing-machines"><span class="nav-number">2.4.</span> <span class="nav-text">Neurons, nature’s computing machines</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Matrix-multiplication-is-useful"><span class="nav-number">2.5.</span> <span class="nav-text">Matrix multiplication is useful</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Learning-weights-from-more-than-one-node"><span class="nav-number">2.6.</span> <span class="nav-text">Learning weights from more than one node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-we-actually-update-weights"><span class="nav-number">2.7.</span> <span class="nav-text">How do we actually update weights</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Preparing-date"><span class="nav-number">2.8.</span> <span class="nav-text">Preparing date</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#input"><span class="nav-number">2.8.1.</span> <span class="nav-text">input</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#output"><span class="nav-number">2.8.2.</span> <span class="nav-text">output</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-initial-weights"><span class="nav-number">2.9.</span> <span class="nav-text">random initial weights</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DIY-with-Python"><span class="nav-number">3.</span> <span class="nav-text">DIY with Python</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-very-gentle-start-with-Python"><span class="nav-number">3.1.</span> <span class="nav-text">A very gentle start with Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Neural-network-with-Python"><span class="nav-number">3.2.</span> <span class="nav-text">Neural network with Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-NMIST-dataset-of-hand-written-numbers"><span class="nav-number">3.3.</span> <span class="nav-text">The NMIST dataset of hand written numbers</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Even-More-Fun"><span class="nav-number">4.</span> <span class="nav-text">Even More Fun</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Inside-the-mind-of-a-neural-network"><span class="nav-number">4.1.</span> <span class="nav-text">Inside the mind of a neural network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creating-new-training-data-rotations"><span class="nav-number">4.2.</span> <span class="nav-text">Creating new training data: rotations</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jake Wang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a></div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> Visitors
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> Total traffic
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

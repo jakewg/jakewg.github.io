@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JWBlog</title>
+    <link>https://jakewang.me/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>personal blog</description>
+    <pubDate>Sat, 08 Feb 2020 04:30:21 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>高效稳定访问校园网络的方式</title>
+      <link>https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <guid>https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <pubDate>Fri, 07 Feb 2020 12:52:58 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。&lt;/p&gt;
+&lt;p&gt;如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>双拼使用体验：打字效率翻倍？</title>
+      <link>https://jakewang.me/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/</link>
+      <guid>https://jakewang.me/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/</guid>
+      <pubDate>Sun, 09 Jun 2019 08:51:56 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;p&gt;大概从 2019 年 2 月份开始，我开始学习使用小鹤双拼，并从记忆键位表开始就完全关掉了全拼输入法，强制让自己去练习使用双拼。实际证明这样的方法非常有效，到 5
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://jakewang.me/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Summaries of a book —— Make Your Own Neural Network</title>
+      <link>https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/</link>
+      <guid>https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/</guid>
+      <pubDate>Fri, 18 Jan 2019 14:46:19 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h2 id=&quot;Prologue&quot;&gt;&lt;a href=&quot;#Prologue&quot; class=&quot;headerlink&quot; title=&quot;Prologue&quot;&gt;&lt;/a&gt;Prologue&lt;/h2&gt;&lt;p&gt;This is my first time to write a blog in
+          
+        
+      
+      </description>
+      
+      
+      <comments>https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
