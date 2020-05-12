@@ -83,18 +83,23 @@
 
 
 
-<meta name="description" content="这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。 如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式： 绝大多数院校使用的 VPN 方案为 Cisco 的 AnyConnec">
+<meta name="description" content="这学期的小组作业要写不少代码，一直在寻找共享工作代码的方式，最好还能带有控制版本的功能以防有人失手引入大量 Bug 造成不必要的麻烦。手边最现成的方案是 Github，但是要求全组非 IT 背景同学在命令行使用 Git 是一个学习成本过高的事情，遂作罢。直至今天发现 GitHub 的图形界面客户端非常简洁易用，五分钟就能上手，不用配置 Git 不用使用命令行，于是决定写一篇简明教程。 准备工作 注">
 <meta name="keywords" content="Tool,Study">
 <meta property="og:type" content="article">
-<meta property="og:title" content="高效稳定访问校园网络的方式">
-<meta property="og:url" content="https://jakewang.me/高效稳定访问校园网络的方式/index.html">
+<meta property="og:title" content="Github 客户端简明教程">
+<meta property="og:url" content="https://jakewang.me/Github 客户端简明教程/index.html">
 <meta property="og:site_name" content="JWBlog">
-<meta property="og:description" content="这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。 如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式： 绝大多数院校使用的 VPN 方案为 Cisco 的 AnyConnec">
+<meta property="og:description" content="这学期的小组作业要写不少代码，一直在寻找共享工作代码的方式，最好还能带有控制版本的功能以防有人失手引入大量 Bug 造成不必要的麻烦。手边最现成的方案是 Github，但是要求全组非 IT 背景同学在命令行使用 Git 是一个学习成本过高的事情，遂作罢。直至今天发现 GitHub 的图形界面客户端非常简洁易用，五分钟就能上手，不用配置 Git 不用使用命令行，于是决定写一篇简明教程。 准备工作 注">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2020-02-08T04:30:21.594Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_4.png">
+<meta property="og:updated_time" content="2020-05-12T10:49:09.459Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="高效稳定访问校园网络的方式">
-<meta name="twitter:description" content="这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。 如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式： 绝大多数院校使用的 VPN 方案为 Cisco 的 AnyConnec">
+<meta name="twitter:title" content="Github 客户端简明教程">
+<meta name="twitter:description" content="这学期的小组作业要写不少代码，一直在寻找共享工作代码的方式，最好还能带有控制版本的功能以防有人失手引入大量 Bug 造成不必要的麻烦。手边最现成的方案是 Github，但是要求全组非 IT 背景同学在命令行使用 Git 是一个学习成本过高的事情，遂作罢。直至今天发现 GitHub 的图形界面客户端非常简洁易用，五分钟就能上手，不用配置 Git 不用使用命令行，于是决定写一篇简明教程。 准备工作 注">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_1.png">
 
 
 
@@ -124,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://jakewang.me/高效稳定访问校园网络的方式/">
+  <link rel="canonical" href="https://jakewang.me/Github 客户端简明教程/">
 
 
 
 
 
-  <title>高效稳定访问校园网络的方式 | JWBlog</title>
+  <title>Github 客户端简明教程 | JWBlog</title>
   
 
 
@@ -303,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jakewang.me/高效稳定访问校园网络的方式/">
+    <link itemprop="mainEntityOfPage" href="https://jakewang.me/Github 客户端简明教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jake Wang">
@@ -320,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">高效稳定访问校园网络的方式</h1>
+          <h1 class="post-title" itemprop="name headline">Github 客户端简明教程</h1>
         
 
         <div class="post-meta">
@@ -332,8 +337,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-07T20:52:58+11:00">
-                02-07-2020
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-12T20:47:21+10:00">
+                05-12-2020
               </time>
             
 
@@ -369,7 +374,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  395 words
+                  684 words
                 </span>
               
 
@@ -385,7 +390,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1 mins
+                  2 mins
                 </span>
               
             </div>
@@ -406,18 +411,20 @@
       
 
       
-        <p>这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。</p>
-<p>如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式：</p>
-<p>绝大多数院校使用的 VPN 方案为 Cisco 的 AnyConnect 方案，其安装和使用都非常的简单，只需使用到三个变量：</p>
-<ol>
-<li>Connect to, 即你要访问学校服务器地址。可通过查询获知，例如 vpn.sydney.edu.au</li>
-<li>Username, 即学生 Unikey</li>
-<li>Password, 即与Unikey 所对应的密码</li>
+        <p>这学期的小组作业要写不少代码，一直在寻找共享工作代码的方式，最好还能带有控制版本的功能以防有人失手引入大量 Bug 造成不必要的麻烦。手边最现成的方案是 Github，但是要求全组非 IT 背景同学在命令行使用 Git 是一个学习成本过高的事情，遂作罢。直至今天发现 GitHub 的图形界面客户端非常简洁易用，五分钟就能上手，不用配置 Git 不用使用命令行，于是决定写一篇简明教程。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>注册<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>账号</li>
+<li>下载<a href="https://desktop.github.com/" target="_blank" rel="noopener">Github Desktop</a>客户端</li>
 </ol>
-<p>Windows 及 macOS 客户端下载网址可正常访问：vpn.sydney.edu.au</p>
-<p>移动端下载地址：<a href="https://apps.apple.com/us/app/cisco-anyconnect/id1135064690" target="_blank" rel="noopener">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.cisco.anyconnect.vpn.android.avf&hl=en_US" target="_blank" rel="noopener">Google Play</a>, <a href="https://c-t.work/s/e5d7615075214f" target="_blank" rel="noopener">APK下载</a></p>
-<p>学校提供的 VPN 服务器速度有限，其重点在于提高访问的稳定性，减少因防火墙造成的网络丢包现象进而提升访问效率。如果需要进一步的提升速度以满足高质量音视频需求，可使用其他<a href="https://github.com/bigdongdongCLUB/newGCP/issues/1" target="_blank" rel="noopener">教程</a>。需要注意的是，此种模式下设备的全部网络流量都会过代理服务器，因此原服务位于国内的网络资源，如微信与微博，会绕道海外服务器，增加访问服务的响应时间。</p>
-<p>如有其他问题，可直接联系我。</p>
+<h2 id="Git-的简单原理"><a href="#Git-的简单原理" class="headerlink" title="Git 的简单原理"></a>Git 的简单原理</h2><p>简单谈一下原理，明白Git 的原理应有助于继续学习使用。只提及最简单且必要的步骤，其他的例如 add 和 brach 等暂不涉及。</p>
+<p>我们可以把整个全过程类比成一个网盘同步的过程。</p>
+<ol>
+<li>网盘：在本地设置一个文件夹，将云端的内容下载到本地，自动。<br> Github：在本地设置一个文件，将远端的代码文件下载到本地，手动动作 Clone。</li>
+<li>网盘：在本地修改文件后检测到文件的不同，自动记录。<br> GitHub：在本地修改文件后检测到文件的不同，自动检测到修改，需要手动记录动作 Commit。</li>
+<li>网盘：自动上传修改后文件。<br> GitHub：需要手动动作 Push 将修改的文件和修改记录上传到远端。</li>
+<li>网盘：自动检测到云端文件变化，自动下载到本地。<br> GitHub：手动动作 Fetch / Pull  将远端的变化文件下载到本地。修改后重复第二步和第三步</li>
+</ol>
+<h2 id="GitHub-Desktop-的使用"><a href="#GitHub-Desktop-的使用" class="headerlink" title="GitHub Desktop 的使用"></a>GitHub Desktop 的使用</h2><p>打开 GitHub 客户端后首先登陆账号，并设置用户名和邮箱作为你在项目的身份辨识。<br>推荐使用默认的 Tutorial 示例作为教程，简明易懂。<br><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_1.png" alt><br>点击从互联网克隆一个仓库，输入想要克隆的仓库地址。<br><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_2.png" alt><br>第一次成功克隆之后就可以就代码或数据进行修改和保存，GitHub 客户端能自动检测到修改的内容并以红绿色块高亮出来。在你确定要同步这些修改后，可在 commit 区域添加修改的注释并点击确认。<br><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_3.png" alt><br>这时便能看到 Push 的提醒，点击后即可把修改过的代码上传到云仓库。需要注意的是在你进行下一次修改代码文件之前，请先点击 Fetch 按钮将云仓库的文件同步到本地，以防止云端文件的改变未同步至本地。<br><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/Github_%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B_4.png" alt></p>
 
       
     </div>
@@ -450,8 +457,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/双拼使用体验：打字效率翻倍？/" rel="next" title="双拼使用体验：打字效率翻倍？">
-                <i class="fa fa-chevron-left"></i> 双拼使用体验：打字效率翻倍？
+              <a href="/关于情绪管理的读书笔记《Undoing Depression》—  Part 1/" rel="next" title="关于情绪管理的读书笔记《Undoing Depression》—  Part 1">
+                <i class="fa fa-chevron-left"></i> 关于情绪管理的读书笔记《Undoing Depression》—  Part 1
               </a>
             
           </div>
@@ -459,10 +466,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/关于情绪管理的读书笔记《Undoing Depression》—  Part 1/" rel="prev" title="关于情绪管理的读书笔记《Undoing Depression》—  Part 1">
-                关于情绪管理的读书笔记《Undoing Depression》—  Part 1 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -516,8 +519,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -575,6 +587,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git-的简单原理"><span class="nav-number">2.</span> <span class="nav-text">Git 的简单原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Desktop-的使用"><span class="nav-number">3.</span> <span class="nav-text">GitHub Desktop 的使用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
