@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JWBlog</title>
+    <link>https://jakewang.me/</link>
+    
+    <atom:link href="https://jakewang.me/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>personal blog</description>
+    <pubDate>Mon, 10 May 2021 06:59:21 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>豆瓣电影爬虫梳理</title>
+      <link>https://jakewang.me/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E7%88%AC%E8%99%AB%E6%A2%B3%E7%90%86/</link>
+      <guid>https://jakewang.me/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E7%88%AC%E8%99%AB%E6%A2%B3%E7%90%86/</guid>
+      <pubDate>Mon, 10 May 2021 04:57:41 GMT</pubDate>
+      
+      <description>&lt;p&gt;❗️爬虫会对网站产生负担和资源浪费，无论所在地区是否合法，过度使用都会引发道德问题。本项目只用于个人学习实践，具体的代码可在 &lt;a href=&quot;https://github.com/jakewg/DoubanWebScraper&quot;&gt;Github&lt;/a&gt; 找到。&lt;/p&gt;
+&lt;p&gt;最近看了一些用 Python 实现基础数据结构和算法的书，虽然依旧是云里雾里，但是对基本的代码逻辑和 Python 数据对象的特点更熟悉了些。因此，我索性就实现一下很久以前就想实现的项目：把我过去在豆瓣标记过的电影都下载下来。从去年开始我开始使用私有数据库做电影和图书的标记，主要原因是觉得数据在自己手里，管理和分析起来方便一些。&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://jakewang.me/tags/Tool/">Tool</category>
+      
+      <category domain="https://jakewang.me/tags/Python/">Python</category>
+      
+      <category domain="https://jakewang.me/tags/Scraper/">Scraper</category>
+      
+      
+      <comments>https://jakewang.me/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E7%88%AC%E8%99%AB%E6%A2%B3%E7%90%86/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>GitHub 客户端简明教程</title>
+      <link>https://jakewang.me/Github%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</link>
+      <guid>https://jakewang.me/Github%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/</guid>
+      <pubDate>Tue, 12 May 2020 10:47:21 GMT</pubDate>
+      
+      <description>&lt;p&gt;这学期的小组作业要写不少代码，一直在寻找共享工作代码的方式，最好还能带有版本控制功能以防有人失手引入错误造成不必要的麻烦。手边最现成的方案是 GitHub，但是要求全组非 IT 背景同学在命令行使用 Git 是一个学习成本过高的事情，遂作罢。直至今天发现 GitHub 的图形界面客户端非常简洁易用，五分钟就能上手，不用配置 Git 不用使用命令行，于是决定写一篇简明教程。&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://jakewang.me/tags/Tool/">Tool</category>
+      
+      <category domain="https://jakewang.me/tags/Study/">Study</category>
+      
+      
+      <comments>https://jakewang.me/Github%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>关于情绪管理的读书笔记《Undoing Depression》—  Part 1</title>
+      <link>https://jakewang.me/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/</link>
+      <guid>https://jakewang.me/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/</guid>
+      <pubDate>Sat, 09 May 2020 13:18:22 GMT</pubDate>
+      
+      <description>&lt;p&gt;二月初国内疫情严重时，我做过一个心理健康在线测试，结果只有28/100分。之后我意识到，任何时间阶段的不确定性带来的情绪波动都会给个人生活质量造成巨大影响。对于较为长期的抑郁情绪来说，药物治疗是一个简单快捷的手段，但且不论它对于建立一个良好的心理状况有没有帮助，其可能产生的副作用和依赖性风险，就值得每一个使用者再三斟酌。这片博文观点的基础，《Undoing Depression 走出抑郁》的作者 Richard O’Connor 估算，约有 25% 的人会在人生的某一阶段遭遇中等程度抑郁。这也是意味着，我身边的每四个朋友中就有一个会遇到这样的危机。当下新冠危机仍在继续，希望 Richard O’Connor 医生的理论依据和体验能建立一个系统的情绪管理体系，以帮助处于心理困境的朋友。&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://jakewang.me/tags/Books/">Books</category>
+      
+      <category domain="https://jakewang.me/tags/Life/">Life</category>
+      
+      
+      <comments>https://jakewang.me/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>高效稳定访问校园网络的方式</title>
+      <link>https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <guid>https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <pubDate>Fri, 07 Feb 2020 09:52:58 GMT</pubDate>
+      
+      <description>&lt;p&gt;这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。&lt;/p&gt;
+&lt;p&gt;如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式：&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://jakewang.me/tags/Tool/">Tool</category>
+      
+      <category domain="https://jakewang.me/tags/Study/">Study</category>
+      
+      
+      <comments>https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>双拼使用体验：打字效率翻倍？</title>
+      <link>https://jakewang.me/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/</link>
+      <guid>https://jakewang.me/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/</guid>
+      <pubDate>Sun, 09 Jun 2019 06:51:56 GMT</pubDate>
+      
+      <description>&lt;p&gt;大概从 2019 年 2 月份开始，我开始学习使用小鹤双拼，并从记忆键位表开始就完全关掉了全拼输入法，强制让自己去练习使用双拼。实际证明这样的方法非常有效，到 5 月份以后，我已经能够使用双拼以原来全拼的速度打字了。这件事情最困难的点在于，手上的行动会完全跟不上自己的思维，因此在需要极速打字的场景，例如同时对多人聊天的场景下，就会出现急得跳脚的情况。至于打字效率有没有翻倍，至少我现在还没有。但我认为实现只是时间问题，现在要做的是把现有的肌肉记忆进一步固化进潜意识了，如果做到凭直觉去打字那么效率就会高的多。&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://jakewang.me/tags/Life/">Life</category>
+      
+      <category domain="https://jakewang.me/tags/Productivity/">Productivity</category>
+      
+      
+      <comments>https://jakewang.me/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Summaries of a book —— Make Your Own Neural Network</title>
+      <link>https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/</link>
+      <guid>https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/</guid>
+      <pubDate>Fri, 18 Jan 2019 11:46:19 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;Prologue&quot;&gt;&lt;a href=&quot;#Prologue&quot; class=&quot;headerlink&quot; title=&quot;Prologue&quot;&gt;&lt;/a&gt;Prologue&lt;/h2&gt;&lt;p&gt;This is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speaker, I can write slower and have more time to acquire and understand the knowledge in the book totally. Second, codes and functions are written by English in this book. Thus, thinking in the same language will help me avoid issues of translation, especially the special words in codes. Last but not least, the process can be credit to improve my English skills which is very superficial.&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://jakewang.me/tags/Study/">Study</category>
+      
+      <category domain="https://jakewang.me/tags/Books/">Books</category>
+      
+      
+      <comments>https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
