@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/appletouchicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png">
+  <link rel="mask-icon" href="/safaripinnedtab.svg" color="#222">
+  <meta name="msapplication-config" content="/iebrowserconfig.xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jakewang.me","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="PrologueThis is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speak">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Summaries of a book —— Make Your Own Neural Network">
+<meta property="og:url" content="https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/index.html">
+<meta property="og:site_name" content="JWBlog">
+<meta property="og:description" content="PrologueThis is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speak">
+<meta property="og:locale">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_0.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_3.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_4.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_5.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_6.jpg">
+<meta property="article:published_time" content="2019-01-18T11:46:19.000Z">
+<meta property="article:modified_time" content="2021-05-10T07:02:30.219Z">
+<meta property="article:author" content="Jake Wang">
+<meta property="article:tag" content="Books">
+<meta property="article:tag" content="Study">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_0.jpg">
+
+<link rel="canonical" href="https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'default'
+  };
+</script>
+
+  <title>Summaries of a book —— Make Your Own Neural Network | JWBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JWBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Think More, Do More</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="https://jakewang.me/Summaries%20of%20a%20book%20%E2%80%94%E2%80%94%20Make%20Your%20Own%20Neural%20Network/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jake Wang">
+      <meta itemprop="description" content="personal blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JWBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Summaries of a book —— Make Your Own Neural Network
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 01-18-2019 22:46" itemprop="dateCreated datePublished" datetime="2019-01-18T22:46:19+11:00">01-18-2019</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 05-10-2021 17:02" itemprop="dateModified" datetime="2021-05-10T17:02:30+10:00">05-10-2021</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h2><p>This is my first time to write a blog in English and so I would like to explain reasons which encourage me to do this. Briefly, it can help me learn. First, because I am a Chinese native speaker, I can write slower and have more time to acquire and understand the knowledge in the book totally. Second, codes and functions are written by English in this book. Thus, thinking in the same language will help me avoid issues of translation, especially the special words in codes. Last but not least, the process can be credit to improve my English skills which is very superficial.</p>
+<span id="more"></span>
+
+<p><em>Make Your Own Neural Network</em> is a basic introduced book for people who hope to know mechanisms of neural network and machine learning. Even if people don’t want to learn programming, the simple explanation can teach them how a computer simulates neural cells to work like the human’s brain. There are the book’s links at <a target="_blank" rel="noopener" href="https://book.douban.com/subject/26945232/">Douban</a>, <a target="_blank" rel="noopener" href="https://www.amazon.com/Make-Your-Own-Neural-Network/dp/1530826608/ref=sr_1_2?ie=UTF8&qid=1547821621&sr=8-2&keywords=make+your+own+neural+network">Amazon</a> and my <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/Make%20Your%20Own%20Neural%20Network/Make%20Your%20Own%20Neural%20Network_withMarginNotes.pdf"> mindnote</a>, <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/Make%20Your%20Own%20Neural%20Network/neural%20network%20backup.py">final code backup</a> at Github.</p>
+<h2 id="Mechanism"><a href="#Mechanism" class="headerlink" title="Mechanism"></a>Mechanism</h2><h3 id="A-new-age-inspired-by-a-nature"><a href="#A-new-age-inspired-by-a-nature" class="headerlink" title="A new age inspired by a nature"></a>A new age inspired by a nature</h3><p>After the computer having popularized, many boring and tough tasks are no longer difficult for people, such as calculating millions of numbers. Although computers can deal with complex multi-problems simultaneously, they have no ability to identify is there a cat or a baby in a photo. Therefore, people say why not try to build artificial brains by copying how real biological brains worked? The next step is that using programs to make machines cope with tasks just like what human neural cells do.</p>
+<h3 id="A-simple-predicting-machine"><a href="#A-simple-predicting-machine" class="headerlink" title="A simple predicting machine"></a>A simple predicting machine</h3><p>Like all computer systems, we should have an input and an output with some calculation in between. Compared with math solutions, we may do not know how the process happen. So we could only use a model with parameters which we can adjust to represent this mysterious process. After that, a good method to refine these models is to adjust the parameters based on how wrong the model is compared to know true examples.</p>
+<h3 id="Training-a-simple-classifier"><a href="#Training-a-simple-classifier" class="headerlink" title="Training a simple classifier"></a>Training a simple classifier</h3><p>Training data means that examples of truth used to teach a predictor or a classifier.</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_0.jpg"></p>
+<p>Through these graphs, we can know how to use the error to inform how we adjust the slope. We can use the equation <em>∆A = E / x</em> to update the original A many times and simply match the last training example closely. Besides, we need use <strong>learning rate</strong> to moderate the updates which is helpful to avoid errors and noises from the real world. </p>
+<p>But one classifier is not enough.  It cannot separate data where that data itself isn’t governed by a single linear process. Boolean functions, <strong>AND, OR, XOR</strong> are also very necessary when we just use multiple linear classifiers to divide up data.</p>
+<h3 id="Neurons-nature’s-computing-machines"><a href="#Neurons-nature’s-computing-machines" class="headerlink" title="Neurons, nature’s computing machines"></a>Neurons, nature’s computing machines</h3><p>Neurons all transmit an electrical signal from one end to the other, from dendrites along the axons to the terminals. It takes an electric input, and pops out another electrical signal. They do not react readily but instead suppress the input until it has grown so large that it triggers and output. We can use the logistic function to simulate the process’s characteristic.</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_1.jpg"></p>
+<p>One way to replicate this from nature to an artificial model is to have layers of neurons, with each connected to every other one in the preceding and subsequent layer. By this method, our computer model will also attain the ability to be incredibly resilient to damage and imperfect signals just like human brains. To make the model learn, we should adjust the strength of connections between nodes. Therefore, the mechanism ought to de-emphasize a weight which lead to the wrong answer and raise the weight which lead to the right answer.</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_2.jpg"></p>
+<h3 id="Matrix-multiplication-is-useful"><a href="#Matrix-multiplication-is-useful" class="headerlink" title="Matrix multiplication is useful"></a>Matrix multiplication is useful</h3><p>First, matrix allow us to compress writing all those calculations into a very simple short form. Second, many computer programming languages understand working with matrices quickly and efficiently.</p>
+<p><em>X = W·I</em> and <em>O = sigmoid (X)</em> W is the matrix of weight, I is the matrix of inputs.</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_3.jpg"></p>
+<h3 id="Learning-weights-from-more-than-one-node"><a href="#Learning-weights-from-more-than-one-node" class="headerlink" title="Learning weights from more than one node"></a>Learning weights from more than one node</h3><p>The next step is to use the output from the neural network and compare it with the training example to work out an error. We used the error, the difference between what the node produced as an answer and what we know the answer should, to guide that refinement. So we use the proportion of weights to split the output error. In below graphs, the error e1 is split in proportion to the connected links, which have weight w11 and w21.</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_4.jpg"></p>
+<p>If we had even more layers, we’d repeatedly apply this same idea to each layer working backwards from the final output layer.</p>
+<h3 id="How-do-we-actually-update-weights"><a href="#How-do-we-actually-update-weights" class="headerlink" title="How do we actually update weights"></a>How do we actually update weights</h3><p>The mathematical expressions showing how all the weights result in a neural network’s output are too complex to easily untangle. Thus, we can use gradient descent method to find the minimum without actually having to understand functions. It is very necessary for us to refine without the size of the steps overshooting the minimum and forever bouncing around it.</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_5.jpg"></p>
+<p>To avoid ending up in the wrong valley, or function minimum, we train neural networks several times starting from different points on the hill to ensure we don’t always ending up in the wrong valley. So this method is also resilient to imperfections in the data, we don’t go wildly wrong if the function isn’t quite perfectly. </p>
+<p>Here’s the final answer we’ve been working towards, the one that describes the slope of the error function so we can adjust the weight wjk. And we also use 𝛂 as a learning rate</p>
+<p><img src="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/pages_img/make_you_own_neural_network_6.jpg"></p>
+<h3 id="Preparing-date"><a href="#Preparing-date" class="headerlink" title="Preparing date"></a>Preparing date</h3><h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><p>A very flat activation function is problematic because we use the gradient to learn new weights. A tiny gradient means we’ve limited the ability to learn which called <strong>saturating a neural network</strong>. Besides, a very very tiny values can be problematic too because computers can lose accuracy when dealing very very small or very very large numbers. The good range of input is range 0.0 to 1.0. To avoid killing the learning ability by zeroing the weight update, zero inputs should not be included in.</p>
+<h4 id="output"><a href="#output" class="headerlink" title="output"></a>output</h4><p>The logistic function doesn’t get to 1.0, and it just gets closer to it which is called this asymptotically approaching 1.0. If we do set target values in the inaccessible ranges, the training will drive ever large weights in an attempt to produce larger and larger output.</p>
+<h3 id="random-initial-weights"><a href="#random-initial-weights" class="headerlink" title="random initial weights"></a>random initial weights</h3><p>We should choose initial weights randomly and uniformly from range -1.0 to +1.0. and avoid large initial weights because they cause large signals into an activation function and undermine the effort we put into carefully scaling the input signals. Moreover, we don’t set the initial weights the same constant value, especially. Obviously, zero weights can kill the input signal and error back propagating should not be divided equally.</p>
+<h2 id="DIY-with-Python"><a href="#DIY-with-Python" class="headerlink" title="DIY with Python"></a>DIY with Python</h2><h3 id="A-very-gentle-start-with-Python"><a href="#A-very-gentle-start-with-Python" class="headerlink" title="A very gentle start with Python"></a>A very gentle start with Python</h3><p>Class: we have created an object called sizzles from the Dog class definition and we can consider this object to be a dog.  </p>
+<pre><code>sizzles =  Dog() sizzles.bark()
+#initialisation method with internal data
+def __init__(self, petname, temp):
+self.name = petname;
+self.temperaturn = temp:
+pass
+</code></pre>
+<p>The <code>self.</code> part means that the variables are part of this object and are independent of another Dog object or general variables in Python.</p>
+<h3 id="Neural-network-with-Python"><a href="#Neural-network-with-Python" class="headerlink" title="Neural network with Python"></a>Neural network with Python</h3><p>The skeleton code:</p>
+<ul>
+<li>initialization: to set the number of input, hidden and output nodes.</li>
+<li>train: refine the weights after being given a training set example to learn from.</li>
+<li>query: give an answer from the output nodes after being given an input.</li>
+</ul>
+<p>The most important part of the network is the link weights expressed as a matrix. <em>Xhidden = Winput_hiddenx · I</em> <em>Ohidden = sigmoid · ( Xhidden )</em></p>
+<p>Training the network:</p>
+<ul>
+<li>working out the output for a given training example. That is no different to what we just did with the query() function.</li>
+<li>taking this calculated output, comparing it with the desired output, and using the difference to guide the updating of the network weights.</li>
+</ul>
+<h3 id="The-NMIST-dataset-of-hand-written-numbers"><a href="#The-NMIST-dataset-of-hand-written-numbers" class="headerlink" title="The NMIST dataset of hand written numbers"></a>The NMIST dataset of hand written numbers</h3><p>There is my <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/jakewg/jw_blog_file_host/master/Make%20Your%20Own%20Neural%20Network/neural%20network%20backup.py">final codes backup</a> on GIthub.</p>
+<p>In the <em>.cvs</em> file, the first value is the label which is the actual digit that the handwriting is supposed to represent. The subsequent values means the original picture’s pixel values. We did see earlier how we might plot a rectangular array of numbers using the <code>imshow()</code> function. We want to do the same here but we need to convert that list of comma separated numbers into a suitable array. Split that long text string of comma separated values into individual values, using the commas as the place to do the splitting. Ignore the first value, which is the label, and take the remaining list of 28 x 28 = 784 values and turn them into an array which has a shape of 28 rows by 28 columns and plot the array.</p>
+<p>We’ve deliberately chosen 0.01 as the lower end of the range to avoid the problems we saw earlier with zero valued inputs because they can artificially kill weight updates. We don’t have to choose 0.99 for the upper end of the input because we don’t need to avoid 1.0 for the inputs. It’s only for the outputs that we should avoid the impossible to reach 1.0.</p>
+<p>By choosing a value smaller than the number of inputs, we force the network to try to summaries the key features. But if we choose too few hidden layer nodes, then we restrict the ability of the network to find sufficient features or patterns.</p>
+<p>Finally, we can do some improvements.</p>
+<ul>
+<li>The first improvement we can try is to adjust the learning rate. We set it at 0.3 previously without really experimenting with different values.</li>
+<li>The next improvement we can do is to repeat the training several times against the data set. Some people call each run through an epoch.</li>
+<li>Another idea is that the learning rate is too high for larger numbers of epochs.</li>
+<li>Try changing the number of middle hidden layer nodes.</li>
+</ul>
+<h2 id="Even-More-Fun"><a href="#Even-More-Fun" class="headerlink" title="Even More Fun"></a>Even More Fun</h2><h3 id="Inside-the-mind-of-a-neural-network"><a href="#Inside-the-mind-of-a-neural-network" class="headerlink" title="Inside the mind of a neural network"></a>Inside the mind of a neural network</h3><p>Once a neural network is trained, and performs well enough on test data, we essentially have a mysterious black box. We don’t really know how it works out the answer - it just does.</p>
+<h3 id="Creating-new-training-data-rotations"><a href="#Creating-new-training-data-rotations" class="headerlink" title="Creating new training data: rotations"></a>Creating new training data: rotations</h3><p>we could create new ones from those by rotating them clockwise and anti-clockwise, by 10 degrees for example. o by adding training examples with overly rotated images, we are reducing the quality of the training by adding false examples. Ten degrees seems to be the optimal angle for maximizing the value of additional data.</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Books/" rel="tag"># Books</a>
+              <a href="/tags/Study/" rel="tag"># Study</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/" rel="next" title="双拼使用体验：打字效率翻倍？">
+      双拼使用体验：打字效率翻倍？ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Prologue"><span class="nav-number">1.</span> <span class="nav-text">Prologue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mechanism"><span class="nav-number">2.</span> <span class="nav-text">Mechanism</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-new-age-inspired-by-a-nature"><span class="nav-number">2.1.</span> <span class="nav-text">A new age inspired by a nature</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-simple-predicting-machine"><span class="nav-number">2.2.</span> <span class="nav-text">A simple predicting machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-a-simple-classifier"><span class="nav-number">2.3.</span> <span class="nav-text">Training a simple classifier</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Neurons-nature%E2%80%99s-computing-machines"><span class="nav-number">2.4.</span> <span class="nav-text">Neurons, nature’s computing machines</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Matrix-multiplication-is-useful"><span class="nav-number">2.5.</span> <span class="nav-text">Matrix multiplication is useful</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Learning-weights-from-more-than-one-node"><span class="nav-number">2.6.</span> <span class="nav-text">Learning weights from more than one node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#How-do-we-actually-update-weights"><span class="nav-number">2.7.</span> <span class="nav-text">How do we actually update weights</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Preparing-date"><span class="nav-number">2.8.</span> <span class="nav-text">Preparing date</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#input"><span class="nav-number">2.8.1.</span> <span class="nav-text">input</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#output"><span class="nav-number">2.8.2.</span> <span class="nav-text">output</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-initial-weights"><span class="nav-number">2.9.</span> <span class="nav-text">random initial weights</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DIY-with-Python"><span class="nav-number">3.</span> <span class="nav-text">DIY with Python</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-very-gentle-start-with-Python"><span class="nav-number">3.1.</span> <span class="nav-text">A very gentle start with Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Neural-network-with-Python"><span class="nav-number">3.2.</span> <span class="nav-text">Neural network with Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-NMIST-dataset-of-hand-written-numbers"><span class="nav-number">3.3.</span> <span class="nav-text">The NMIST dataset of hand written numbers</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Even-More-Fun"><span class="nav-number">4.</span> <span class="nav-text">Even More Fun</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Inside-the-mind-of-a-neural-network"><span class="nav-number">4.1.</span> <span class="nav-text">Inside the mind of a neural network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Creating-new-training-data-rotations"><span class="nav-number">4.2.</span> <span class="nav-text">Creating new training data: rotations</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jake Wang</p>
+  <div class="site-description" itemprop="description">personal blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/rss2.xml" title="RSS → &#x2F;rss2.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jake Wang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

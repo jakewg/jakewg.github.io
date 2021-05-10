@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/appletouchicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png">
+  <link rel="mask-icon" href="/safaripinnedtab.svg" color="#222">
+  <meta name="msapplication-config" content="/iebrowserconfig.xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jakewang.me","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="二月初国内疫情严重时，我做过一个心理健康在线测试，结果只有28&#x2F;100分。之后我意识到，任何时间阶段的不确定性带来的情绪波动都会给个人生活质量造成巨大影响。对于较为长期的抑郁情绪来说，药物治疗是一个简单快捷的手段，但且不论它对于建立一个良好的心理状况有没有帮助，其可能产生的副作用和依赖性风险，就值得每一个使用者再三斟酌。这片博文观点的基础，《Undoing Depression 走出抑郁》的作者">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于情绪管理的读书笔记《Undoing Depression》—  Part 1">
+<meta property="og:url" content="https://jakewang.me/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/index.html">
+<meta property="og:site_name" content="JWBlog">
+<meta property="og:description" content="二月初国内疫情严重时，我做过一个心理健康在线测试，结果只有28&#x2F;100分。之后我意识到，任何时间阶段的不确定性带来的情绪波动都会给个人生活质量造成巨大影响。对于较为长期的抑郁情绪来说，药物治疗是一个简单快捷的手段，但且不论它对于建立一个良好的心理状况有没有帮助，其可能产生的副作用和依赖性风险，就值得每一个使用者再三斟酌。这片博文观点的基础，《Undoing Depression 走出抑郁》的作者">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-05-09T13:18:22.000Z">
+<meta property="article:modified_time" content="2021-05-10T07:02:23.155Z">
+<meta property="article:author" content="Jake Wang">
+<meta property="article:tag" content="Books">
+<meta property="article:tag" content="Life">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://jakewang.me/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'default'
+  };
+</script>
+
+  <title>关于情绪管理的读书笔记《Undoing Depression》—  Part 1 | JWBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JWBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Think More, Do More</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="https://jakewang.me/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jake Wang">
+      <meta itemprop="description" content="personal blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JWBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于情绪管理的读书笔记《Undoing Depression》—  Part 1
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 05-09-2020 23:18" itemprop="dateCreated datePublished" datetime="2020-05-09T23:18:22+10:00">05-09-2020</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 05-10-2021 17:02" itemprop="dateModified" datetime="2021-05-10T17:02:23+10:00">05-10-2021</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>二月初国内疫情严重时，我做过一个心理健康在线测试，结果只有28/100分。之后我意识到，任何时间阶段的不确定性带来的情绪波动都会给个人生活质量造成巨大影响。对于较为长期的抑郁情绪来说，药物治疗是一个简单快捷的手段，但且不论它对于建立一个良好的心理状况有没有帮助，其可能产生的副作用和依赖性风险，就值得每一个使用者再三斟酌。这片博文观点的基础，《Undoing Depression 走出抑郁》的作者 Richard O’Connor 估算，约有 25% 的人会在人生的某一阶段遭遇中等程度抑郁。这也是意味着，我身边的每四个朋友中就有一个会遇到这样的危机。当下新冠危机仍在继续，希望 Richard O’Connor 医生的理论依据和体验能建立一个系统的情绪管理体系，以帮助处于心理困境的朋友。</p>
+<span id="more"></span>
+
+<h2 id="理解抑郁"><a href="#理解抑郁" class="headerlink" title="理解抑郁"></a>理解抑郁</h2><p>基于美国官方统计，大约有 6.7% 的美国人在一生中会遇到较为重大的抑郁。抑郁对于经济的影响仅次于癌症，约等于心脏病和艾滋，其包括人力资源的损失，药物与治疗费用。大多数抑郁的人都有同样的心理状态：感到羞耻并不愿承认、会责怪自己太过弱小以至于心理困难都克服不了。不同于普通的疾病，也是抑郁最为残酷的一点：自责和内疚正是其症状但自我意识不到。对于抑郁患者来说，其神经化学物质是不同于常人的，因此它从来不单单是心理问题而是同样包含了身体问题。人们往往不会承认自己的抑郁，但会从生活中的某一个点表现出来，感情、酒精、药物和糟糕的学习与工作。想要认识到它，自我承认其病理性是第一步。</p>
+<h2 id="抑郁的体验"><a href="#抑郁的体验" class="headerlink" title="抑郁的体验"></a>抑郁的体验</h2><p>在普通人看来，抑郁常常和伤心、悲痛混淆。但抑郁的反面不是幸福，而是活力，是感受情感的能力。它可以包括伤心，高兴与兴奋等等。抑郁的标志是长时间的难过或是没有情感，中等抑郁的人仍旧可以吃饭、工作、娱乐与进行性生活，但看上去很空洞；更加严重的人会从一系列的活动中退出并对参与感到精疲力竭。以下使用 O’Connor 医生的观点作为综合评述：</p>
+<ol>
+<li>抑郁的感情技巧<ul>
+<li>情感隔离，即能意识到周遭发生的一切但不能体会到与之相伴的情绪。</li>
+<li>躯体化</li>
+<li>否认与压抑</li>
+</ul>
+</li>
+<li>抑郁的行为技巧<ul>
+<li>拖延</li>
+<li>嗜睡</li>
+<li>不停的工作但不分主次，盲目的前进</li>
+<li>强迫行为，多数与生活中的恐惧相关</li>
+<li>伤害与暴力或是成为受害者</li>
+</ul>
+</li>
+<li>抑郁的认知技巧<ul>
+<li>悲观，期待最坏的结果以此避免失望</li>
+<li>消极的自我对话</li>
+<li>被动，容易被外界的强制力量控制</li>
+<li>选择性注意，即只关注证实了预期的事物</li>
+</ul>
+</li>
+<li>抑郁的人际交往技巧<ul>
+<li>招募同伙，将社交圈子限定在那些对你没有期望的人以内</li>
+<li>社会隔离</li>
+<li>依赖</li>
+<li>反依赖，即表现的仿佛不需要任何人</li>
+</ul>
+</li>
+<li>对自我的抑郁性对待<ul>
+<li>虚高的目标，极低的期待</li>
+<li>没有目标，充满内疚</li>
+<li>对自我的被动攻击</li>
+</ul>
+</li>
+<li>对身体的抑郁性对待<ul>
+<li>疲惫与衰竭的不断循环</li>
+<li>缺乏锻炼</li>
+<li>忽视药物治疗</li>
+<li>预防性进食，用食物来堵塞情绪</li>
+<li>滥用药物和酒精</li>
+</ul>
+</li>
+</ol>
+<h2 id="阐释"><a href="#阐释" class="headerlink" title="阐释"></a>阐释</h2><p>当我们讨论抑郁的时候，是喜忧参半的。让人恐惧的消息是，长时间抑郁会造成脑损伤。人会失去分泌多巴胺的能力，而多巴胺是快乐系统中首要的神经递质。其次，海马体同样会随着重度抑郁的发作而缩小，这也可能解释了抑郁患者为什么在集中注意力以及记忆上存在困难，因为海马承担着将短时记忆转换为长时记忆的重要作用。但让人振奋的好消息是，通过练习，大脑可以被改变和修复。有关冥想的研究显示，有规律的练习能重塑大脑，其可以增强前额皮层的活跃性，而前额皮层则被认为是自我意识产生的地方。研究认为，压力经历会造成神经化学物质的不平衡，长时间的不平衡性会发展成为一种慢性疾病。作为抑郁的一部分，恶性循环也是不得不提的一部分，因为以下状况会互相强化：</p>
+<ul>
+<li>抑郁思维</li>
+<li>自我妨碍行为，例如酒精滥用、拖延、混乱、嗜睡和优柔寡断</li>
+<li>内疚、自责和降低的自尊</li>
+<li>害怕情绪失控</li>
+<li>生活的大部分方面运作不良</li>
+</ul>
+<p>以上为Richard O’Connor 医生的著作《Undoing Depression》的第一部分 “了解抑郁”的主要内容及一些主观理解，略去了一些学术性的分析。接下来的一篇，将包括更有指导意义的第二部分。</p>
+<p>Proof reading: Greg</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Books/" rel="tag"># Books</a>
+              <a href="/tags/Life/" rel="tag"># Life</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/" rel="prev" title="高效稳定访问校园网络的方式">
+      <i class="fa fa-chevron-left"></i> 高效稳定访问校园网络的方式
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Github%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" rel="next" title="GitHub 客户端简明教程">
+      GitHub 客户端简明教程 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E6%8A%91%E9%83%81"><span class="nav-number">1.</span> <span class="nav-text">理解抑郁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8A%91%E9%83%81%E7%9A%84%E4%BD%93%E9%AA%8C"><span class="nav-number">2.</span> <span class="nav-text">抑郁的体验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%90%E9%87%8A"><span class="nav-number">3.</span> <span class="nav-text">阐释</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jake Wang</p>
+  <div class="site-description" itemprop="description">personal blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/rss2.xml" title="RSS → &#x2F;rss2.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jake Wang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

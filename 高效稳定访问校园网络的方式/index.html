@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/appletouchicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png">
+  <link rel="mask-icon" href="/safaripinnedtab.svg" color="#222">
+  <meta name="msapplication-config" content="/iebrowserconfig.xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jakewang.me","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。 如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高效稳定访问校园网络的方式">
+<meta property="og:url" content="https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/index.html">
+<meta property="og:site_name" content="JWBlog">
+<meta property="og:description" content="这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。 如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式：">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-02-07T09:52:58.000Z">
+<meta property="article:modified_time" content="2021-05-10T07:02:03.672Z">
+<meta property="article:author" content="Jake Wang">
+<meta property="article:tag" content="Study">
+<meta property="article:tag" content="Tool">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'default'
+  };
+</script>
+
+  <title>高效稳定访问校园网络的方式 | JWBlog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JWBlog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Think More, Do More</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="default">
+    <link itemprop="mainEntityOfPage" href="https://jakewang.me/%E9%AB%98%E6%95%88%E7%A8%B3%E5%AE%9A%E8%AE%BF%E9%97%AE%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%BB%9C%E7%9A%84%E6%96%B9%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jake Wang">
+      <meta itemprop="description" content="personal blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JWBlog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          高效稳定访问校园网络的方式
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 02-07-2020 20:52" itemprop="dateCreated datePublished" datetime="2020-02-07T20:52:58+11:00">02-07-2020</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 05-10-2021 17:02" itemprop="dateModified" datetime="2021-05-10T17:02:03+10:00">05-10-2021</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>这篇文章旨在帮助同学和朋友提升访问校园网络资源的速度和稳定性，以及使用 Google Scholar 或 Wikipedia 及其他学术工具。在使用的同时请遵守当地的法律法规。</p>
+<p>如果你仍旧能访问学校网络，请直接使用学校官网搜索 ‘VPN’ 后遵循学校官方指导。如你访问学校网站时发生困难，如加载超时、部分加载等，请尝试以下方式：</p>
+<span id="more"></span>
+
+<p>绝大多数院校使用的 VPN 方案为 Cisco 的 AnyConnect 方案，其安装和使用都非常的简单，只需使用到三个变量：</p>
+<ol>
+<li>Connect to, 即你要访问学校服务器地址。可通过查询获知，例如 vpn.sydney.edu.au</li>
+<li>Username, 即学生 Unikey</li>
+<li>Password, 即与Unikey 所对应的密码</li>
+</ol>
+<p>Windows 及 macOS 客户端下载网址可正常访问：vpn.sydney.edu.au</p>
+<p>移动端下载地址：<a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/cisco-anyconnect/id1135064690">iOS</a>, <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.cisco.anyconnect.vpn.android.avf&hl=en_US">Google Play</a>, <a target="_blank" rel="noopener" href="https://c-t.work/s/e5d7615075214f">APK下载</a></p>
+<p>学校提供的 VPN 服务器速度有限，其重点在于提高访问的稳定性，减少因防火墙造成的网络丢包现象进而提升访问效率。如果需要进一步的提升速度以满足高质量音视频需求，可使用其他<a target="_blank" rel="noopener" href="https://github.com/bigdongdongCLUB/newGCP/issues/1">教程</a>。需要注意的是，此种模式下设备的全部网络流量都会过代理服务器，因此原服务位于国内的网络资源，如微信与微博，会绕道海外服务器，增加访问服务的响应时间。</p>
+<p>如有其他问题，可直接联系我。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Study/" rel="tag"># Study</a>
+              <a href="/tags/Tool/" rel="tag"># Tool</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E5%8F%8C%E6%8B%BC%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C%EF%BC%9A%E6%89%93%E5%AD%97%E6%95%88%E7%8E%87%E7%BF%BB%E5%80%8D%EF%BC%9F/" rel="prev" title="双拼使用体验：打字效率翻倍？">
+      <i class="fa fa-chevron-left"></i> 双拼使用体验：打字效率翻倍？
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E5%85%B3%E4%BA%8E%E6%83%85%E7%BB%AA%E7%AE%A1%E7%90%86%E7%9A%84%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E3%80%8AUndoing%20Depression%E3%80%8B%E2%80%94%20%20Part%201/" rel="next" title="关于情绪管理的读书笔记《Undoing Depression》—  Part 1">
+      关于情绪管理的读书笔记《Undoing Depression》—  Part 1 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jake Wang</p>
+  <div class="site-description" itemprop="description">personal blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/rss2.xml" title="RSS → &#x2F;rss2.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jake Wang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
